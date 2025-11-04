@@ -3,7 +3,7 @@
 mkdir /agent && cd /agent
 sudo chown azureuser /agent
 
-wget https://vstsagentpackage.azureedge.net/agent/3.243.0/vsts-agent-linux-x64-3.243.0.tar.gz
+wget https://download.agent.dev.azure.com/agent/4.264.2/vsts-agent-linux-x64-4.264.2.tar.gz
 
 tar zxvf vsts-agent-linux-x64-3.243.0.tar.gz
 echo "Reached here"
