@@ -1,4 +1,4 @@
-name: Continuous Intergration
+name: Continuous Integration
 on: [push]
 
 jobs:
@@ -7,6 +7,8 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
+            - name: Build the code
+            run: dotnet build
 
-            - name: Hello World
-            - run: echo "Hello, world!"
+            -name: Run tests
+            run: dotnet test
